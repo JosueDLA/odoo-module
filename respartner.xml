@@ -7,13 +7,24 @@
         <field name="arch" type="xml">
             <notebook position="inside">
                 <page string="Sessions">
+                    <field name="servicios">
+                        <tree>
+                            <field name="service"/>
+                            <field name="url"/>
+                            <field name="user"/>
+                            <field name="password" password="True"/>
+                        </tree>
+                    </field>
+                </page>
+
+                <!-- <page string="Sessions">
                     <group>
                         <field name="service"/>
                         <field name="url"/>
                         <field name="user"/>
                         <field name="password" password="True"/>
                     </group>
-                </page>
+                </page> -->
             </notebook>
         </field>
     </record>
