@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="resPartnerId" model="ir.ui.view">
-        <field name="name">partner.partner.inherit</field>
+        <field name="name">res.partner.inherit</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form" />
         <field name="arch" type="xml">
             <notebook position="inside">
-                <page string="Sessions">
-                    <field name="servicios">
-                        <tree>
-                            <field name="service"/>
-                            <field name="url"/>
-                            <field name="user"/>
-                            <field name="password" password="True"/>
-                        </tree>
-                    </field>
-                </page>
-
                 <!-- <page string="Sessions">
                     <group>
                         <field name="service"/>
@@ -25,7 +14,31 @@
                         <field name="password" password="True"/>
                     </group>
                 </page> -->
+
+                <!-- <page string="Sessions">
+                    <tree>
+                        <field name="service"/>
+                        <field name="url"/>
+                        <field name="user"/>
+                        <field name="password" password="True"/>
+                        <field name="service_id" password="True"/>
+                    </tree>
+                </page> -->
+
+                 <page string="Sessions">
+                    <field name="partners">
+                        <tree>
+                             <field name="partner_id" invisible="1" />
+                             <field name="service"/>
+                             <field name="url"/>
+                             <field name="user"/>
+                             <field name="password" password="True"/>
+                         </tree>
+                    </field>
+
+                 </page>
+
             </notebook>
         </field>
     </record>
-</odoo>
+</odoo> 
