@@ -24,24 +24,33 @@ __Parameters:__ --conf [PATH to odoo.conf]
 
 Now we need to install all the modules that Odoo needs to run, these modules are:
 
-- PyPDF2
-- babel
-- passlib
-- werkzeug
-- lxml
-- polib
-- decorator
-- win32service
-- pypiwin32
-- psycopg2
-- python-dateutil
-- werkzeug
-- requests
-- psutil
-- jinja2
-- reportlab
-- html2text
-- docutils
+**Package** | **Version**
+:-----:|:-----:
+Babel| 2.8.0
+certifi| 2020.6.20
+chardet| 3.0.4
+decorator| 4.4.2
+docutils| 0.16
+html2text| 2020.1.16
+idna| 2.10
+Jinja2| 2.11.2
+lxml| 4.5.2
+MarkupSafe| 1.1.1
+passlib| 1.7.2
+Pillow| 7.2.0
+polib| 1.1.0
+psutil| 5.7.2
+psycopg2| 2.8.5
+PyPDF2| 1.26.0
+pypiwin32| 223
+python-dateutil| 2.8.1
+pytz| 2020.1
+pywin32| 228
+reportlab| 3.5.49
+requests| 2.24.0
+six| 1.15.0
+urllib3| 1.25.10
+Werkzeug| 0.11.15
 
 You can install these modules via Pip, whl files, requirements.txt or by using the pipfile
 
