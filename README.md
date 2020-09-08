@@ -22,6 +22,8 @@ __Parameters:__ --conf [PATH to odoo.conf]
 
 ![PyCharm New Project](/Images/PyCharm-2.png)
 
+![PyCharm New Project](/Images/PyCharm-3.png)
+
 Now we need to install all the modules that Odoo needs to run, these modules are:
 
 **Package** | **Version**
